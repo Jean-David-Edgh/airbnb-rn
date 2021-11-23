@@ -65,34 +65,33 @@ export default function SignInScreen({ setToken }) {
 
 const styles = StyleSheet.create({
   logo: {
-    height: 150,
+    height: 100,
     width: 150,
-    // marginTop: 20,
     paddingBottom: 20,
   },
   signInContainer: {
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     backgroundColor: "#fff",
-    height: 600,
+    height: Dimensions.get("window").height,
     alignItems: "center",
   },
   pageTitle: {
     fontWeight: "bold",
-    paddingBottom: 20,
+    paddingTop: 10,
+    width: 60,
+    fontSize: 18,
   },
   input: {
     borderBottomColor: "rgba(237, 96, 104, 0.5)",
     borderStyle: "solid",
     borderBottomWidth: 3,
-    // backgroundColor: "orange",
     marginBottom: 20,
     opacity: 0.8,
     width: 300,
   },
   button: {
     marginTop: 10,
-    // borderColor: "#ED6068",
-    borderColor: "rgb(237, 96, 104)",
+    borderColor: "rgba(237, 96, 104, 0.7)",
     borderStyle: "solid",
     borderWidth: 3,
     borderRadius: 30,
@@ -110,14 +109,12 @@ const styles = StyleSheet.create({
   },
   subContainer: {
     alignItems: "center",
-    marginBottom: 10,
   },
   subContainer2: {
     alignItems: "center",
-    marginBottom: 40,
+    marginBottom: 80,
   },
   subContainer0: {
     alignItems: "center",
-    marginTop: 20,
   },
 });
